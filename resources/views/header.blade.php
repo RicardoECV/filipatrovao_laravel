@@ -10,7 +10,7 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup" >
           <div class="navbar-nav gap-4">
             <a class="nav-link pe-4 p-0 font_color" aria-current="page" href="index.php">Home</a>
-            <a class="nav-link pe-4 p-0 font_color" href="aboutme.php">About Me</a>
+            <a class="nav-link pe-4 p-0 font_color" href="{{route('aboutmepage')}}">About Me</a>
             <a class="nav-link pe-4 p-0 font_color" href="research.php">Research</a>                
             <a class="nav-link pe-4 p-0 font_color" href="scicomm.php">SciComm</a>   
             <a class="nav-link pe-4 p-0 font_color contact-link" href="index.php#contacts_title">Contacts</a>             

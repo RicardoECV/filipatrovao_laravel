@@ -1,9 +1,4 @@
 @extends('components.layout')
-
-@section('header') 
-  @include('header') 
-@endsection
-
 @section('content') 
 
 <div class="container-fluid">
@@ -14,12 +9,12 @@
     </div>
     <div class="col-lg-5 col-11">
       <div class="m-5">
-        <h2 class="freestyle home_title"> {{$homepage['title']}} </h2>
+        <h2 class="freestyle home_title">{{$homepage['title']}}</h2>
         <p class="home_text">{{$homepage['text']}}</p>          
       </div>    
       <div class="d-flex justify-content-between m-5">
         <div class="d-flex gap-4">
-          <a class="home_more_link text-decoration-none" href="aboutme.php">More...</a>
+          <a class="home_more_link text-decoration-none" href="/aboutme">More...</a>
         </div>                        
       </div>    
     </div>    
