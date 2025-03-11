@@ -4,14 +4,14 @@
     <nav class="navbar navbar-expand">
       <div class="container-fluid">
         <div class="navbar-brand d-flex flex-column text-center">
-          <a href="index.php" class="navbar-brand p-0 freestyle font_color header_title"><?= $homepage["header"]; ?></a>
-          <a href="index.php" class="navbar-brand text-decoration-none font_color header_sub_title"><?= $homepage["header_sub_title"]; ?></a>               
+          <a href="index.php" class="navbar-brand p-0 freestyle font_color header_title"><?= $home_page["header"]; ?></a>
+          <a href="index.php" class="navbar-brand text-decoration-none font_color header_sub_title"><?= $home_page["header_sub_title"]; ?></a>               
         </div>    
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup" >
           <div class="navbar-nav gap-4">
-            <a class="nav-link pe-4 p-0 font_color" aria-current="page" href="index.php">Home</a>
+            <a class="nav-link pe-4 p-0 font_color" aria-current="page" href="{{route('home')}}">Home</a>
             <a class="nav-link pe-4 p-0 font_color" href="{{route('aboutmepage')}}">About Me</a>
-            <a class="nav-link pe-4 p-0 font_color" href="research.php">Research</a>                
+            <a class="nav-link pe-4 p-0 font_color" href="{{route('researchpage')}}">Research</a>                
             <a class="nav-link pe-4 p-0 font_color" href="scicomm.php">SciComm</a>   
             <a class="nav-link pe-4 p-0 font_color contact-link" href="index.php#contacts_title">Contacts</a>             
             <a target="_blank" class="nav-link pe-4 p-0 font_color" href="https://drive.google.com/file/d/19qPuG2eAmemURv6sAHMk-yYqY7Os183W/view?usp=sharing">CV</a>   
@@ -28,8 +28,8 @@
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
         <div class="d-flex flex-column">
-          <a href="index.php" class="navbar-brand text-center p-0 freestyle font_color header_title"><?= $homepage["header"]; ?></a>
-          <a href="index.php" class="navbar-brand text-decoration-none font_color header_sub_title"><?= $homepage["header_sub_title"]; ?></a>
+          <a href="index.php" class="navbar-brand text-center p-0 freestyle font_color header_title">{{ $home_page["header"] }}</a>
+          <a href="index.php" class="navbar-brand text-decoration-none font_color header_sub_title">{{ $home_page["header_sub_title"] }}</a>
         </div>            
         <button onclick="toggleIcon()" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span> 
@@ -41,7 +41,7 @@
               <a class="nav-link nav_mobile_link p-0 font_color" aria-current="page" href="index.php">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav_mobile_link p-0 font_color" href="aboutme.php">About Me</a>
+              <a class="nav-link nav_mobile_link p-0 font_color" href="{{ route('aboutmepage') }}">About Me</a>
             </li> 
             <li class="nav-item">
               <a class="nav-link nav_mobile_link p-0 font_color" href="research.php">Research</a>                

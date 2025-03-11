@@ -13,7 +13,7 @@ class AboutmeController extends Controller
 {
   public function aboutme() { 
     return view('aboutme', [
-      'homepage' => Homepage::first(),
+      'home_page' => Homepage::first(),
       'aboutme_page' => Aboutme::first(),
       'expertises' => Expertises::all(),
       'myjourneys' => Myjourneys::all(),

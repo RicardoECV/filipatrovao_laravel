@@ -5,12 +5,12 @@
 
   <div class="row justify-content-center mt-5">
     <div class="col-lg-5 col-12 d-flex">
-      <img src="{{$homepage['img']}}" class="index_img w-100 align-self-center" alt="">      
+      <img src="{{ $home_page['img'] }}" class="index_img w-100 align-self-center" alt="">      
     </div>
     <div class="col-lg-5 col-11">
       <div class="m-5">
-        <h2 class="freestyle home_title">{{$homepage['title']}}</h2>
-        <p class="home_text">{{$homepage['text']}}</p>          
+        <h2 class="freestyle home_title">{{ $home_page['title'] }}</h2>
+        <p class="home_text">{{ $home_page['text'] }}</p>          
       </div>    
       <div class="d-flex justify-content-between m-5">
         <div class="d-flex gap-4">

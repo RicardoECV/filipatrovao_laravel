@@ -10,7 +10,7 @@ class HomeController extends Controller
 {
   public function home() {  
     return view('home', [
-      'homepage' => Homepage::first(),
+      'home_page' => Homepage::first(),
       'contacts' => Contacts::first()
     ]);
   }
