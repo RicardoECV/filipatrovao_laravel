@@ -5,7 +5,7 @@
 
   <div class="row justify-content-center mt-5">
     <div class="col-lg-5 col-12 d-flex">
-      <img src="{{ $home_page['img'] }}" class="index_img w-100 align-self-center" alt="">      
+      <img src="{{ $home_page['img'] }}" class="index_img w-100 align-self-center" alt="{{ $home_page['img'] }}">      
     </div>
     <div class="col-lg-5 col-11">
       <div class="m-5">
@@ -14,7 +14,7 @@
       </div>    
       <div class="d-flex justify-content-between m-5">
         <div class="d-flex gap-4">
-          <a class="home_more_link text-decoration-none" href="/aboutme">More...</a>
+          <a class="home_more_link text-decoration-none" href="{{ route('aboutmepage') }}">More...</a>
         </div>                        
       </div>    
     </div>    

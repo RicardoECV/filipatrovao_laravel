@@ -27,7 +27,7 @@
             <h5 class="d-inline-flex gap-1 m-0">
               <p class="card-title expertise_card_title text-decoration-none m-0" data-bs-toggle="collapse" href="#collapseExample-{{ $loop->index }}" role="button" aria-expanded="false" aria-controls="collapseExample-{{ $loop->index }}" onclick="clickCard('{{ $loop->index }}')">
                 {{ $element['title'] }}
-                <img src="../images/logos/icons8-arrow-up-24.png" alt="Arrow Icon" class="expertise_arrow_{{ $loop->index }} transition-expertise">
+                <img src="{{ asset('images/logos/icons8-arrow-up-24.png')}}" alt="Arrow Icon" class="expertise_arrow_{{ $loop->index }} transition-expertise">
               </p> 
             </h5>
 
@@ -52,7 +52,7 @@
   <div class="row">
 
     <div class="col-1 d-md-block d-none text-center my-3">
-      <img src="../images/logos/seta2.png" class="aboutme_arrow px-2 position-sticky top-0" alt="Imagem Seta">
+      <img src="{{ asset('images/logos/seta2.png') }}" class="aboutme_arrow px-2 position-sticky top-0" alt="Imagem Seta">
     </div>
 
     <div class="col-11 m-auto">
