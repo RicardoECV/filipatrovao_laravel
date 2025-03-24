@@ -28,20 +28,20 @@
 
   <div class="row justify-content-center">
     <div class="col-3 text-center">
-      <a href="mailto:">
-        <img class="home_icon" src="{{ $contacts['logo_email'] }}" alt="">
+      <a href="mailto:{{ $contacts['link_email'] }}">
+        <img class="home_icon" src="{{ $contacts['logo_email'] }}" alt="{{ $contacts['logo_email'] }}">
       </a>      
     </div>
 
     <div class="col-3 text-center">
-      <a href="">
-        <img class="home_icon" src="{{ asset('uploads/icons8-linkedin-50.png') }}" alt="">
+      <a href="{{ $contacts['link_linkdin'] }}">
+        <img class="home_icon" src="{{ $contacts['logo_linkdin'] }}" alt="{{ $contacts['logo_linkdin'] }}">
       </a>      
     </div>
 
     <div class="col-3 text-center">
-      <a href="">
-        <img class="home_icon" src="{{ asset('uploads/icons8-x-50.png') }}" alt="">
+      <a href="{{ $contacts['link_x'] }}">
+        <img class="home_icon" src="{{ $contacts['logo_x'] }}" alt="{{ $contacts['logo_x'] }}">
       </a>      
     </div>
   </div>
