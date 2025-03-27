@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AboutmeController;
+use App\Http\Controllers\BackofficeUserController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ResearchController;
@@ -18,3 +19,11 @@ Route::get('/research', [ResearchController::class, 'research'])
 
 Route::get('/scicomm', [ScicommController::class, 'scicomm'])
   ->name('scicommpage');
+
+Route::get('/backoffice', function() {
+  return view('home_backoffice');
+});
+
+Route::post('/backoffice/login', [BackofficeUserController::class, 'login']);
+Route::get('/backoffice/logout', [BackofficeUserController::class, 'logout'])
+  ->name('backoffice_logout');
