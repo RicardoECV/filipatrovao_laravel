@@ -12,7 +12,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::table('contacts', function (Blueprint $table) {
-            $table->string('cv_link', length:400);
+            $table->string('cv_link', length: 400);
         });
     }
 
