@@ -15,7 +15,7 @@
               <a class="nav-link" aria-current="page" href="home.php">Home</a>
             </li> 
             <li class="nav-item">
-              <a class="nav-link" href="principal.php">Home Page</a>
+              <a class="nav-link" href="{{ route('backoffice_home_page') }}">Home Page</a>
             </li>    
             <li class="nav-item">
               <a class="nav-link" href="aboutme.php">About Me</a>
@@ -30,7 +30,10 @@
               <a class="nav-link" href="contacts.php">Contactos</a>
             </li>  
             <li class="nav-item">
-              <a class="nav-link" href="{{ route('backoffice_logout')}} ">Logout</a>
+              <form action="{{ route('backoffice_logout')}}" method="post">
+                @csrf
+                <button class="nav-link">Logout</button>
+              </form>              
             </li>                
           </ul>              
         </div>

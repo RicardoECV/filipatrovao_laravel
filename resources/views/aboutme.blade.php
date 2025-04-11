@@ -16,24 +16,24 @@
   </div>    
   
   <div class="row justify-content-center gap-5">
-    <?php foreach($skills as $i => $skill): ?>
+    @foreach($skills as $skill)
       <div class="col-lg-2 col-md-4 col-8 p-0">
         <div class="card">
-          <img src="<?= $skill['img']; ?>" class="card-img-top" alt="<?= $skill['img']; ?>">          
+          <img src="{{ $skill['img'] }}" class="card-img-top" alt="{{ $skill['img'] }}">          
           <div class="card-body">                   
             <h5 class="d-inline-flex gap-1 m-0">
-              <p class="card-title expertise_card_title text-decoration-none m-0" data-bs-toggle="collapse" href="#collapseExample-<?= $i; ?>" role="button" aria-expanded="false" aria-controls="collapseExample-<?= $i; ?>" onclick="clickCard('<?= $i; ?>')">
-                <?= $skill['title']; ?>
-                <img src="{{ asset('images/logos/icons8-arrow-up-24.png') }}" alt="Arrow Icon" class="expertise_arrow_<?= $i; ?> transition-expertise">
+              <p class="card-title expertise_card_title text-decoration-none m-0" data-bs-toggle="collapse" href="#collapseExample-{{ $loop->index }}" role="button" aria-expanded="false" aria-controls="collapseExample-{{ $loop->index }}" onclick="clickCard('{{ $loop->index }}')">
+                {{ $skill['title'] }}
+                <img src="{{ asset('images/logos/icons8-arrow-up-24.png') }}" alt="Arrow Icon" class="expertise_arrow_{{ $loop->index }} transition-expertise">
               </p> 
             </h5>
-            <div class="collapse" id="collapseExample-<?= $i; ?>">
-              <div class="card card-body expertise_card_text"><?= $skill['text']; ?></div>
+            <div class="collapse" id="collapseExample-{{ $loop->index }}">
+              <div class="card card-body expertise_card_text">{{ $skill['text'] }}</div>
             </div>
           </div>
         </div>
       </div>
-    <?php endforeach; ?>
+    @endforeach
   </div>  
 
   <div class="row justify-content-center mt-5">

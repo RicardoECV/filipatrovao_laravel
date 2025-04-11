@@ -1,5 +1,5 @@
 @extends('components.layout_backoffice')
-@section('home_backoffice')
+@section('backoffice_index')
 
   @auth
     <div class="row">
@@ -18,8 +18,7 @@
     
     <div class="row">
       <div class="col-auto p-4 mx-auto border border-3 border-success rounded-4 text-center">
-    
-        
+            
         <!-- Login/Senha Incorretos -->
         @if($errors->first('password'))
           <h2 class="text-danger py-4">{{ $errors->first('password') }}</h2>

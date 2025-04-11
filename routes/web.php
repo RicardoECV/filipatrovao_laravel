@@ -21,9 +21,14 @@ Route::get('/scicomm', [ScicommController::class, 'scicomm'])
   ->name('scicommpage');
 
 Route::get('/backoffice', function() {
-  return view('home_backoffice');
+  return view('backoffice_index');
 });
 
+
+Route::get('/backoffice/home_page', function() {
+  return view('backoffice_home_page');
+})->name('backoffice_home_page')->middleware('auth');  
+
 Route::post('/backoffice/login', [BackofficeUserController::class, 'login']);
-Route::get('/backoffice/logout', [BackofficeUserController::class, 'logout'])
+Route::post('/backoffice/logout', [BackofficeUserController::class, 'logout'])
   ->name('backoffice_logout');

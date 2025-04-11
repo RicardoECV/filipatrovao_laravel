@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">  
   <title>{{ config('app.name') }}</title>
 
-  @vite(['resources/sass/app.scss', 'resources/js/app.js', 'resources/css/app.css', 'public/fonts/stylesheet.css'])
+  @vite(['resources/sass/app.scss', 'resources/js/app.js', 'resources/css/style_app.css', 'public/fonts/stylesheet.css'])
  
 </head>
 <body>
