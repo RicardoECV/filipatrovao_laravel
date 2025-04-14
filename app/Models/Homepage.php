@@ -9,4 +9,6 @@ class Homepage extends Model
 {
   use HasFactory;  
   protected $table = 'home_page';  
+
+  protected $fillable = ['title', 'header','img', 'text', 'editor_id'];
 }

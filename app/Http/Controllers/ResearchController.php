@@ -14,9 +14,9 @@ class ResearchController extends Controller
 {
   public function research() {
     return view('research', [
-      'home_page' => Homepage::first(),
+      'homePage' => Homepage::first(),
       'contacts' => Contacts::first(),
-      'research_page' => Research::first(),
+      'researchPage' => Research::first(),
       'expertises' => Expertises::all(),
       'publications' => Publications::all(),
       'projects' => Projects::all()

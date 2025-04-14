@@ -121,10 +121,12 @@ namespace App\Models{
  * @property string $img
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property int $editor_id
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Homepage newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Homepage newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Homepage query()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Homepage whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Homepage whereEditorId($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Homepage whereHeader($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Homepage whereHeaderSubTitle($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Homepage whereId($value)
@@ -261,6 +263,7 @@ namespace App\Models{
  * @property string $title
  * @property string $sub_title_1
  * @property string $sub_title_2
+ * @property string $sub_title_3
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Research newModelQuery()
@@ -270,6 +273,7 @@ namespace App\Models{
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Research whereId($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Research whereSubTitle1($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Research whereSubTitle2($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Research whereSubTitle3($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Research whereTitle($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Research whereUpdatedAt($value)
  */
@@ -355,6 +359,7 @@ namespace App\Models{
  * @property string|null $remember_token
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property string $real_name
  * @property-read \Illuminate\Notifications\DatabaseNotificationCollection<int, \Illuminate\Notifications\DatabaseNotification> $notifications
  * @property-read int|null $notifications_count
  * @method static \Database\Factories\UserFactory factory($count = null, $state = [])
@@ -367,6 +372,7 @@ namespace App\Models{
  * @method static \Illuminate\Database\Eloquent\Builder<static>|User whereId($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|User whereName($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|User wherePassword($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|User whereRealName($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|User whereRememberToken($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|User whereUpdatedAt($value)
  */

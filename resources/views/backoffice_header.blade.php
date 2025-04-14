@@ -12,7 +12,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-2">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="home.php">Home</a>
+              <a class="nav-link" aria-current="page" href="{{ route('backoffice_index') }}">Home</a>
             </li> 
             <li class="nav-item">
               <a class="nav-link" href="{{ route('backoffice_home_page') }}">Home Page</a>
@@ -30,7 +30,7 @@
               <a class="nav-link" href="contacts.php">Contactos</a>
             </li>  
             <li class="nav-item">
-              <form action="{{ route('backoffice_logout')}}" method="post">
+              <form action="{{ route('backoffice_logout')}}" method="POST">
                 @csrf
                 <button class="nav-link">Logout</button>
               </form>              
@@ -39,7 +39,7 @@
         </div>
 
         <div class="text-white me-4">
-          Welcome                 
+          Welcome {{ Auth::user()->real_name }}               
         </div>
         <div class="horas text-white">                
         </div>

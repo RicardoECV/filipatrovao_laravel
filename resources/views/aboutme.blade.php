@@ -5,13 +5,13 @@
 
   <div class="row justify-content-center mt-md-4">
     <div class="col-11 m-3 freestyle text-center">
-      <h1 class="aboutme_title">{{ $aboutme_page["title"]; }}</h1>
+      <h1 class="aboutme_title">{{ $aboutmePage["title"]; }}</h1>
     </div>
   </div>
 
   <div class="row justify-content-center mt-md-4">
     <div class="col-11 m-3 freestyle">
-      <h1 class="aboutme_sub_title">{{ $aboutme_page["sub_title_1"]; }}</h1>
+      <h1 class="aboutme_sub_title">{{ $aboutmePage["sub_title_1"]; }}</h1>
     </div>
   </div>    
   
@@ -38,7 +38,7 @@
 
   <div class="row justify-content-center mt-5">
     <div class="col-11 mt-5 freestyle">
-      <h1 class="aboutme_sub_title">{{ $aboutme_page["sub_title_2"]; }}</h1>
+      <h1 class="aboutme_sub_title">{{ $aboutmePage["sub_title_2"]; }}</h1>
     </div>
   </div>
 
@@ -51,7 +51,7 @@
     <div class="col-11 m-auto">
       <div class="container-fluid">
 
-        @foreach ($myjourneys as $journey)
+        @foreach ($myJourneys as $journey)
           <div class="row">
             <div class="col-11 m-md-3 mt-3 m-auto">
               <div class="d-flex">
@@ -78,7 +78,7 @@
 
   <div class="row justify-content-center mt-4">
     <div class="col-11 m-3 freestyle">
-      <h1 class="aboutme_sub_title">{{ $aboutme_page["sub_title_3"] }}</h1>
+      <h1 class="aboutme_sub_title">{{ $aboutmePage["sub_title_3"] }}</h1>
     </div>
   </div>
 

@@ -14,10 +14,10 @@ class BackofficeUserController extends Controller
     ]);
 
     if (auth()->attempt(['name' => $userInputs['loginname'], 'password' => $userInputs['loginpassword']])) {
-      $request->session()->regenerate();     
+      $request->session()->regenerate();         
     }
 
-    $errors = new MessageBag(['password' => ['Login ou PW errados!']]);
+    $errors = new MessageBag(['loginFail' => ['Login ou PW errados!']]);
     return redirect('/backoffice')->withErrors($errors);
   }
 

@@ -4,7 +4,7 @@
   @auth
     <div class="row">
       <div class="col-12 text-center p-5">
-        <h1>Welcome </h1>
+        <h1>Welcome {{ Auth::user()->real_name }}</h1>
         <h3 class="p-3">Last Access Date:</h3>
       </div>
     </div>
@@ -20,8 +20,8 @@
       <div class="col-auto p-4 mx-auto border border-3 border-success rounded-4 text-center">
             
         <!-- Login/Senha Incorretos -->
-        @if($errors->first('password'))
-          <h2 class="text-danger py-4">{{ $errors->first('password') }}</h2>
+        @if($errors->first('loginFail'))
+          <h2 class="text-danger py-4">{{ $errors->first('loginFail') }}</h2>
         @endif
 
         <!-- Formulário Login -->

@@ -14,12 +14,12 @@ class ScicommController extends Controller
 {
     public function scicomm() {
       return view('scicomm',[
-        'home_page' => Homepage::first(),
+        'homePage' => Homepage::first(),
         'contacts' => Contacts::first(),
-        'scicomm_page' => Scicomm::first(),
-        'scicomm_cards' => Scicommcards::all(),
+        'scicommPage' => Scicomm::first(),
+        'scicommCards' => Scicommcards::all(),
         'activities' => Activities::all(),
-        'multimedia_content' => Multimediacontent::all()
+        'multimediaContent' => Multimediacontent::all()
       ]);
     }
 }

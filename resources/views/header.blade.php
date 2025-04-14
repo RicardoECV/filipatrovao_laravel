@@ -4,8 +4,8 @@
     <nav class="navbar navbar-expand">
       <div class="container-fluid">
         <div class="navbar-brand d-flex flex-column text-center">
-          <a href="index.php" class="navbar-brand p-0 freestyle font_color header_title">{{ $home_page["header"] }}</a>
-          <a href="index.php" class="navbar-brand text-decoration-none font_color header_sub_title">{{ $home_page["header_sub_title"] }}</a>               
+          <a href="index.php" class="navbar-brand p-0 freestyle font_color header_title">{{ $homePage["header"] }}</a>
+          <a href="index.php" class="navbar-brand text-decoration-none font_color header_sub_title">{{ $homePage["header_sub_title"] }}</a>               
         </div>    
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup" >
           <div class="navbar-nav gap-4">
@@ -28,8 +28,8 @@
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
         <div class="d-flex flex-column">
-          <a href="index.php" class="navbar-brand text-center p-0 freestyle font_color header_title">{{ $home_page["header"] }}</a>
-          <a href="index.php" class="navbar-brand text-decoration-none font_color header_sub_title">{{ $home_page["header_sub_title"] }}</a>
+          <a href="index.php" class="navbar-brand text-center p-0 freestyle font_color header_title">{{ $homePage["header"] }}</a>
+          <a href="index.php" class="navbar-brand text-decoration-none font_color header_sub_title">{{ $homePage["header_sub_title"] }}</a>
         </div>            
         <button onclick="toggleIcon()" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span> 

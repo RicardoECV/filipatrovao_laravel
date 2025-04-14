@@ -16,7 +16,7 @@
     </header>
   @endauth
   
-  <main>
+  <main class="container-fluid">
     @yield('backoffice_index')
   </main>  
   

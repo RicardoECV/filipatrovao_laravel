@@ -5,12 +5,12 @@
 
   <div class="row justify-content-center mt-md-4">
     <div class="col-11 m-3 freestyle text-center">
-      <h1 class="scicomm_title">{{ $scicomm_page["title"] }}</h1>      
+      <h1 class="scicomm_title">{{ $scicommPage["title"] }}</h1>      
     </div>
   </div>
   
   <div class="row justify-content-lg-around justify-content-center gap-lg-0 gap-3">     
-    @foreach($scicomm_cards as $card)
+    @foreach($scicommCards as $card)
       <div class="col-md-4 col-lg-2 col-10">        
           <div class="card">
             <img src="{{ $card['img'] }}" class="card-img-top" alt="{{ $card['img'] }}">
@@ -24,7 +24,7 @@
   
   <div class="row justify-content-center mt-4">
     <div class="col-11 m-3 freestyle">
-      <h1 class="scicomm_sub_title">{{ $scicomm_page["sub_title_1"] }}</h1>
+      <h1 class="scicomm_sub_title">{{ $scicommPage["sub_title_1"] }}</h1>
     </div>
   </div>
   
@@ -38,12 +38,12 @@
      
   <div class="row justify-content-center mt-4">
     <div class="col-11 m-3 freestyle">
-      <h1 class="scicomm_sub_title">{{ $scicomm_page["sub_title_2"] }}</h1>
+      <h1 class="scicomm_sub_title">{{ $scicommPage["sub_title_2"] }}</h1>
     </div>
   </div>
     
   <div class="row p-0 justify-content-center">  
-    @foreach($multimedia_content as $card)    
+    @foreach($multimediaContent as $card)    
       <div class="col-lg-3 col-xl-2 col-md-4 col-10 m-3">                
           <div class="card h-100">
             <a target="_blank" href="{{ $card['link'] }}">

@@ -5,13 +5,13 @@
 
   <div class="row justify-content-center mt-md-4">
     <div class="col-11 m-3 freestyle text-center">
-      <h1 class="research_title">{{ $research_page["title"] }}</h1>
+      <h1 class="research_title">{{ $researchPage["title"] }}</h1>
     </div>
   </div>
 
   <div class="row justify-content-center mt-4">
     <div class="col-11 freestyle">
-      <h1 class="research_sub_title">{{ $research_page["sub_title_1"] }}</h1>
+      <h1 class="research_sub_title">{{ $researchPage["sub_title_1"] }}</h1>
     </div>
   </div>
 
@@ -45,7 +45,7 @@
 
   <div class="row justify-content-center mt-5">
     <div class="col-11 freestyle">
-      <h1 class="research_sub_title">{{ $research_page["sub_title_2"] }}</h1>
+      <h1 class="research_sub_title">{{ $researchPage["sub_title_2"] }}</h1>
     </div>
   </div>
 
@@ -63,7 +63,7 @@
 
   <div class="row justify-content-center mt-4">
     <div class="col-11 freestyle">
-      <h1 class="research_sub_title">{{ $research_page["sub_title_3"] }}</h1>
+      <h1 class="research_sub_title">{{ $researchPage["sub_title_3"] }}</h1>
     </div>
   </div>
 
