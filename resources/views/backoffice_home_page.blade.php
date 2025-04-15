@@ -31,7 +31,7 @@
           <td>{{ $homePageInfo["title"] }}</td>
           <td>{{ $homePageInfo["text"] }}</td>             
           <td>{{ $user[$homePageInfo['editor_id']]['real_name'] }}</td>            
-          <td>{{ $homePageInfo["edit_date"] }}</td>  
+          <td>{{ $homePageInfo["updated_at"] }}</td>  
           
           <!-- Botão de Editar -->
           <td>

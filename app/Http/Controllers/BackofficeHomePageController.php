@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Homepage;
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\MessageBag;
 
 class BackofficeHomePageController extends Controller
 {
@@ -26,10 +27,11 @@ class BackofficeHomePageController extends Controller
       'title' => 'required',
       'img' => 'required',
       'text' => 'required'
-    ]);  
-    
+    ]);   
+
     $userInputs['editor_id'] = auth()->id();
-    $homePageInfo->update($userInputs);
-    return redirect('/backoffice/home_page_edit');
+    if($homePageInfo->update($userInputs)) {
+      return redirect('/backoffice/home_page_edit')->with('editSuccess', 'Edition Successfull!');
+    }
   }
 }
