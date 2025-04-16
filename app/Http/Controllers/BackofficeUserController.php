@@ -17,7 +17,7 @@ class BackofficeUserController extends Controller
       $request->session()->regenerate();         
     }
 
-    $errors = new MessageBag(['loginFail' => ['Login ou PW errados!']]);
+    $errors = new MessageBag(['loginFail' => 'Login or PW Wrong!']);
     return redirect('/backoffice')->withErrors($errors);
   }
 

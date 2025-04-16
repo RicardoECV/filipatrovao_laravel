@@ -9,10 +9,10 @@
         </div>    
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup" >
           <div class="navbar-nav gap-4">
-            <a class="nav-link pe-4 p-0 font_color" aria-current="page" href="{{ route('home') }}">Home</a>
-            <a class="nav-link pe-4 p-0 font_color" href="{{ route('aboutmepage') }}">About Me</a>
-            <a class="nav-link pe-4 p-0 font_color" href="{{ route('researchpage') }}">Research</a>                
-            <a class="nav-link pe-4 p-0 font_color" href="{{ route('scicommpage') }}">SciComm</a>   
+            <a class="nav-link pe-4 p-0 font_color {{ Route::is('home') ? 'active' : '' }}" aria-current="page" href="{{ route('home') }}">Home</a>
+            <a class="nav-link pe-4 p-0 font_color {{ Route::is('aboutmepage') ? 'active' : '' }}" href="{{ route('aboutmepage') }}">About Me</a>
+            <a class="nav-link pe-4 p-0 font_color {{ Route::is('researchpage') ? 'active' : '' }}" href="{{ route('researchpage') }}">Research</a>                
+            <a class="nav-link pe-4 p-0 font_color {{ Route::is('scicommpage') ? 'active' : '' }}" href="{{ route('scicommpage') }}">SciComm</a>   
             <a class="nav-link pe-4 p-0 font_color contact-link" href="{{ route('home') }}#contacts_title">Contacts</a>             
             <a target="_blank" class="nav-link pe-4 p-0 font_color" href="{{ $contacts['cv_link'] }}">CV</a>   
           </div>
@@ -38,16 +38,16 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-end">
             <li class="nav-item">
-              <a class="nav-link nav_mobile_link p-0 font_color" aria-current="page" href="{{ route('home') }}">Home</a>
+              <a class="nav-link nav_mobile_link p-0 font_color {{ Route::is('home') ? 'active' : '' }}" aria-current="page" href="{{ route('home') }}">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav_mobile_link p-0 font_color" href="{{ route('aboutmepage') }}">About Me</a>
+              <a class="nav-link nav_mobile_link p-0 font_color {{ Route::is('aboutmepage') ? 'active' : '' }}" href="{{ route('aboutmepage') }}">About Me</a>
             </li> 
             <li class="nav-item">
-              <a class="nav-link nav_mobile_link p-0 font_color" href="{{ route('researchpage') }}">Research</a>                
+              <a class="nav-link nav_mobile_link p-0 font_color {{ Route::is('researchpage') ? 'active' : '' }}" href="{{ route('researchpage') }}">Research</a>                
             </li> 
             <li class="nav-item">
-              <a class="nav-link nav_mobile_link p-0 font_color" href="{{ route('scicommpage') }}">SciComm</a>               
+              <a class="nav-link nav_mobile_link p-0 font_color {{ Route::is('scicommpage') ? 'active' : '' }}" href="{{ route('scicommpage') }}">SciComm</a>               
             </li> 
             <li class="nav-item">
               <a target="_blank" class="nav-link nav_mobile_link p-0 font_color" href="{{ $contacts['cv_link'] }}">CV</a>               

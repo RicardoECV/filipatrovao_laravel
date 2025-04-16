@@ -20,16 +20,18 @@
       <div class="col-auto p-4 mx-auto border border-3 border-success rounded-4 text-center">
             
         <!-- Login/Senha Incorretos -->
-        @if($errors->first('loginFail'))
-          <h2 class="text-danger py-4">{{ $errors->first('loginFail') }}</h2>
+        @if($errors->any())
+          @foreach ($errors->all() as $error)
+            <h2 class="text-danger py-4">{{ $error }}</h2>
+          @endforeach
         @endif
 
         <!-- Formulário Login -->
         <form action="/backoffice/login" method="POST"> 
           @csrf       
-          <input type="text" name="loginname" placeholder="Login" autofocus>
+          <input type="text" name="loginname" placeholder="Login" required autofocus>
           <br><br>
-          <input type="password" name="loginpassword" placeholder="Password">
+          <input type="password" name="loginpassword" placeholder="Password" required>
           <br><br>
           <button class="btn btn-outline-success">Login</button>
         </form>
