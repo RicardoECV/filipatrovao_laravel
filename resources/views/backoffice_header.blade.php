@@ -18,7 +18,7 @@
               <a class="nav-link" href="{{ route('backoffice_home_page') }}">Home Page</a>
             </li>    
             <li class="nav-item">
-              <a class="nav-link" href="aboutme.php">About Me</a>
+              <a class="nav-link" href="{{ route('backoffice_aboutme_page') }}">About Me</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="research.php">Research</a>
@@ -27,7 +27,7 @@
               <a class="nav-link " href="scicomm.php">Scicomm & Outreach</a>
             </li>  
             <li class="nav-item">
-              <a class="nav-link" href="contacts.php">Contactos</a>
+              <a class="nav-link" href="contacts.php">Contacts</a>
             </li>  
             <li class="nav-item">
               <form action="{{ route('backoffice_logout')}}" method="POST">
